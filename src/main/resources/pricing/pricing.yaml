@@ -1,0 +1,106 @@
+saasName: My First Pricing Driven SaaS
+day: 30
+month: 04
+year: 2024
+currency: EUR
+features:
+  pets:
+    description: Number of pets per Owner
+    valueType: BOOLEAN
+    defaultValue: true
+    expression: planContext['usageLimits']['maxPets'] > userContext['pets']
+    type: DOMAIN       
+  visits:
+    description: Number of visits per Month And Pet per Owner
+    valueType: BOOLEAN
+    defaultValue: true
+    expression: planContext['usageLimits']['maxVisitsPerMonthAndPet'] > userContext['visits']
+    type: DOMAIN       
+  havePetHotel:
+    description: Access to Pet Hotel
+    valueType: BOOLEAN
+    defaultValue: false
+    expression: planContext['features']['havePetHotel']
+    type: DOMAIN
+  haveAdoptions:
+    description: Access to Adoptions
+    valueType: BOOLEAN
+    defaultValue: false
+    expression: planContext['features']['haveAdoptions']
+    type: DOMAIN
+  haveOnlineConsultations:
+    description: Talk to vet online!
+    valueType: BOOLEAN
+    defaultValue: false
+    expression: planContext['features']['haveOnlineConsultations']
+    type: DOMAIN
+usageLimits:
+  maxPets:
+    description: Max pet per owner threshold
+    valueType: NUMERIC
+    defaultValue: 2
+    unit: pet
+    type: NON_RENEWABLE
+    linkedFeatures:
+    - pets
+  maxVisitsPerMonthAndPet:
+    description: Max visit per month and pet per owner threshold
+    valueType: NUMERIC
+    defaultValue: 1
+    unit: visit
+    type: RENEWABLE
+    linkedFeatures:
+    - visits
+plans:
+  BASIC:
+    description: Basic plan
+    monthlyPrice: 0.0
+    annualPrice: 0.0
+    unit: user/month
+    features:    
+      havePetHotel:
+        value: false 
+      haveAdoptions:
+        value: false 
+      haveOnlineConsultations:
+        value: false      
+    usageLimits:
+      maxPets:
+        value: 2      
+      maxVisitsPerMonthAndPet:
+        value: 1      
+  GOLD:
+    description: Advanced plan
+    monthlyPrice: 25.0
+    annualPrice: 25.0
+    unit: user/month
+    features:
+      havePetHotel:
+        value: true 
+      haveAdoptions:
+        value: true 
+      haveOnlineConsultations:
+        value: false      
+    usageLimits:
+      maxPets:
+        value: 4
+      maxVisitsPerMonthAndPet:
+        value: 3      
+  PLATINUM:
+    description: Advanced plan
+    monthlyPrice: 50.0
+    annualPrice: 50.0
+    unit: user/month
+    features:  
+      havePetHotel:
+        value: true 
+      haveAdoptions:
+        value: true 
+      haveOnlineConsultations:
+        value: true    
+    usageLimits:
+      maxPets:
+        value: 7
+      maxVisitsPerMonthAndPet:
+        value: 6      
+addOns:
