@@ -1,5 +1,5 @@
-# PetclinicEs
-PetclinicEs is a veterinary website developed as part of the project for the Software Process and Management II course in Computer Engineering at the University of Seville. This project is based on React Petclinic and aims to apply the concepts and methodologies learned during the course.
+# PetClinicEs
+PetClinicEs is a veterinary website developed as part of the project for the Software Process and Management II course in Computer Engineering at the University of Seville. This project is based on React Petclinic and aims to apply the concepts and methodologies learned during the course.
 
 # React Petclinic
 Small project based on spring-petclinic for teaching SPA architectures with react, java and spring developer for teaching DP1 at the Software Engineering degree of University of Sevilla.
