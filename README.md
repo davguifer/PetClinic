@@ -1,5 +1,8 @@
+# PetclinicEs
+PetclinicEs is a veterinary website developed as part of the project for the Software Process and Management II course in Computer Engineering at the University of Seville. This project is based on React Petclinic and aims to apply the concepts and methodologies learned during the course.
+
 # React Petclinic
-Small project based on spring-petclinic for teaching SPA architectures with React, Java and Spring. Originally developed for DP1 and adapted for the PSG2 course at the Software Engineering degree of University of Sevilla.
+Small project based on spring-petclinic for teaching SPA architectures with react, java and spring developer for teaching DP1 at the Software Engineering degree of University of Sevilla.
 
 This is a fork of https://github.com/spring-projects/spring-petclinic  The main changes that have been performed were:
 - Trimming several parts of the application to keep the example low
@@ -16,7 +19,7 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 
 
 ```
-git clone https://github.com/gii-is-psg2/react-petclinic.git
+git clone https://github.com/davguifer/MinusPocus-Project
 cd spring-petclinic
 ./mvnw package
 java -jar target/*.jar
@@ -54,7 +57,7 @@ The following items should be installed in your system:
 
 1) On the command line
 ```
-git clone https://github.com/gii-is-psg2/react-petclinic.git
+git clone https://github.com/davguifer/MinusPocus-Project
 ```
 2) Inside Eclipse or STS
 ```
@@ -82,8 +85,8 @@ Visit [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagge
 
 |Spring Boot Configuration | Class or Java property files  |
 |--------------------------|---|
-|The Main Class | [PetClinicApplication](https://github.com/gii-is-psg2/react-petclinic/blob/main/src/main/java/org/springframework/samples/petclinic/PetclinicApplication.java) |
-|Properties Files | [application.properties](https://github.com/gii-is-psg2/react-petclinic/blob/main/src/main/resources/application.properties) |
+|The Main Class | [PetClinicApplication](https://github.com/gii-is-DP1/spring-petclinic/blob/master/src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java) |
+|Properties Files | [application.properties](https://github.com/gii-is-DP1/spring-petclinic/blob/master/src/main/resources) |
 
 
 ## Starting the frontend
